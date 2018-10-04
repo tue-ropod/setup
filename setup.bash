@@ -35,4 +35,4 @@ alias teleop='rosrun robot_common teleop.py'
 alias rstart='roslaunch ropod_tue_1_bringup start.launch LOAD_ATTACHED:="false"'
 alias rmstart='roslaunch ropod__tue_1_bringup start.launch LOAD_ATTACHED:="true" loadName:="mobidik"'
 
-
+alias git-status='functionalities; ./multi-git-status/mgitstatus ~/ropod-project-software/catkin_workspace/src/ 4; catkin_workspace'
