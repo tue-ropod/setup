@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/ropod-project-software/catkin_workspace/src/platform/setup.bash
+source ~/ropod-project-software/catkin_workspace/src/platform/setup/setup.bash
 
 export ROS_IP=`hostname -I`
 
