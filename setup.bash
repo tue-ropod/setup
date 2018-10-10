@@ -60,3 +60,5 @@ function git_branches()
 }
 
 alias git-check-branches='applications; git_branches .; functionalities; git_branches .; git_branches ./ED; git_branches ./ropod_comm; git_branches ./ropod_nav/; git_branches ./ros_experimental_nav/; platform; git_branches .; catkin_workspace; git_branches .'
+
+alias update-dependencies='rosdep update;rosdep install --from-path . -i -y;'
