@@ -36,3 +36,27 @@ alias rstart='roslaunch ropod_tue_1_bringup start.launch LOAD_ATTACHED:="false"'
 alias rmstart='roslaunch ropod__tue_1_bringup start.launch LOAD_ATTACHED:="true" loadName:="mobidik"'
 
 alias git-status='functionalities; ./multi-git-status/mgitstatus ~/ropod-project-software/catkin_workspace/src/ 4; catkin_workspace'
+
+function git_branches()
+{
+    if [[ -z "$1" ]]; then
+        echo "Usage: $FUNCNAME <dir>" >&2
+        return 1
+    fi
+
+    if [[ ! -d "$1" ]]; then
+        echo "Invalid dir specified: '${1}'"
+        return 1
+    fi
+
+    # Subshell so we don't end up in a different dir than where we started.
+    (
+        cd "$1"
+        for sub in *; do
+            [[ -d "${sub}/.git" ]] || continue
+            echo "$sub [$(cd "$sub"; git  branch | grep '^\*' | cut -d' ' -f2)]"
+        done
+    )
+}
+
+alias git-check-branches='applications; git_branches .; functionalities; git_branches .; git_branches ./ED; git_branches ./ropod_comm; git_branches ./ropod_nav/; git_branches ./ros_experimental_nav/; platform; git_branches .; catkin_workspace; git_branches .'
