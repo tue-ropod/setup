@@ -16,7 +16,7 @@ unset ROS_HOSTNAME
 source /opt/ros/kinetic/setup.bash
 source $CATKIN_WORKSPACE/devel/setup.bash
 
-alias buildit="cd $CATKIN_WORKSPACE; catkin_make"
+alias buildit="cd $CATKIN_WORKSPACE; catkin_make -DUSE_SETCAP=ON"
 alias clean_build="cd $CATKIN_WORKSPACE;
                    rm -rf build/ devel/;
                    cd $CATKIN_WORKSPACE/src/; 
