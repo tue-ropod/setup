@@ -35,7 +35,8 @@ alias platform="cd $CATKIN_WORKSPACE/src/platform"
 alias teleop='rosrun robot_common teleop.py'
 #alias pstart='roslaunch pico_bringup start.launch'
 alias rstart='roslaunch ropod_tue_1_bringup start.launch LOAD_ATTACHED:="false"'
-alias rmstart='roslaunch ropod__tue_1_bringup start.launch LOAD_ATTACHED:="true" loadName:="mobidik"'
+alias rmstart='roslaunch ropod_tue_1_bringup start.launch LOAD_ATTACHED:="true" loadName:="mobidik"'
+alias r2start='roslaunch ropod_tue_2_bringup start.launch LOAD_ATTACHED:="false"'
 
 alias git-status='functionalities; ./multi-git-status/mgitstatus ~/ropod-project-software/catkin_workspace/src/ 4; catkin_workspace'
 
