@@ -10,7 +10,9 @@ export ED_MODEL_PATH=$CATKIN_WORKSPACE/src/functionalities/ED/ed_object_models/m
 #export PICO_IP_WIRED=10.0.0.2
 
 export ROPOD_IP=192.168.44.90
+export ROPOD_TUE_2_IP=192.168.44.92
 export ROPOD_IP_WIRED=10.0.0.2
+
 unset ROS_HOSTNAME
 
 source /opt/ros/kinetic/setup.bash
