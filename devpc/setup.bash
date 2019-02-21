@@ -27,6 +27,6 @@ alias ropod2-core-wired="export ROS_MASTER_URI=http://$ROPOD_IP_WIRED:11311;
 			unset ROS_HOSTNAME"
 
 alias ropod-rviz="ropod-core;roslaunch ropod_tue_1_bringup rviz.launch robot_bringup:='~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_1_bringup/'"
-alias ropod2-rviz="ropod-core;roslaunch ropod_tue_2_bringup rviz.launch robot_bringup:='~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_2_bringup/'"
+alias ropod2-rviz="ropod2-core;roslaunch ropod_tue_2_bringup rviz.launch robot_bringup:='~/ropod-project-software/catkin_workspace/src/platform/ropod_tue_2_bringup/'"
 
 export ROBOT_REAL=false
