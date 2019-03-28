@@ -24,7 +24,7 @@ alias clean_build="cd $CATKIN_WORKSPACE;
                    cd $CATKIN_WORKSPACE/src/; 
                    rm CMakelists.txt; 
                    cd $CATKIN_WORKSPACE; 
-                   catkin_make;"
+                   catkin_make -DUSE_SETCAP=ON;"
 
 
 alias catkin_workspace="cd $CATKIN_WORKSPACE"
