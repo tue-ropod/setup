@@ -1,7 +1,8 @@
 #!/bin/bash
 source ~/ropod-project-software/catkin_workspace/src/platform/setup/setup.bash
 
-export ROS_IP=`hostname -I`
+#export ROS_IP=`hostname -I`
+export ROS_IP=`hostname -I | awk '{print $1}'`
 
 alias sshpico="ssh ropod@$PICO_IP"
 alias sshpico-wired="ssh ropod@$PICO_IP_WIRED"
