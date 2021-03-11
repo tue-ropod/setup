@@ -15,7 +15,7 @@ export ROPOD_IP_WIRED=10.0.0.2
 
 unset ROS_HOSTNAME
 
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/$ROS_DISTRO/setup.bash
 source $CATKIN_WORKSPACE/devel/setup.bash
 
 alias buildit="cd $CATKIN_WORKSPACE; catkin_make -DUSE_SETCAP=ON"
